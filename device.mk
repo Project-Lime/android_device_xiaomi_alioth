@@ -41,6 +41,10 @@ PRODUCT_PACKAGES += \
     LineageSystemUIOverlayDevice \
     SystemUIOverlayDevice
 
+# QDCM
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/qdcm/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
